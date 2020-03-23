@@ -109,14 +109,20 @@ footer{
     flex-flow: row wrap;
 }
 
-/*---Header Styles---*/
+.content-wrapper{
+  width:80%;
+}
 
+header{
+  padding: 15px 0;
+}
 
 header .content-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
 }
 
 header nav{
@@ -124,14 +130,19 @@ header nav{
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
+}
+
+.header-divider{
+    width: 100%;
+    margin: 10px 0 20px 0;
 }
 
 header nav ul{
     display: flex;
     justify-content: space-around;
+    width: 100%
 }
-
-/*---Footer Styles---*/
 
 
 footer .social-icons{
@@ -145,6 +156,20 @@ footer .social-icons p{
     justify-content: center;
     align-items: center;
 }
+
+footer .content-wrapper{
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact{
+  margin: 0 0 50px 0;
+}
+
+footer p{
+  margin: 0;
+}
+
 
 
 /* -------------------- Mobile styles -----------------------*/
@@ -173,6 +198,10 @@ aside{
     flex-flow: row wrap;
 }
 
+.features h2{
+    margin: 0 0 60px 0;
+}
+
 .features .features-items{
     display: flex;
     justify-content: center;
@@ -180,10 +209,24 @@ aside{
     flex-flow: row wrap;
 }
 
+.features article{
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features p{
+  margin: 0;
+}
+
 .reviews{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+}
+
+.reviews h3{
+  width: 45%;
+  margin: 20px 0;
 }
 
 
@@ -205,6 +248,9 @@ aside{
     flex-flow: row wrap;
 }
 
+.contact-section p{
+  margin: 0;
+}
 
 /*---FAQ Page Styles---*/
 
@@ -216,12 +262,20 @@ aside{
 }
 
 .faq .content-wrapper{
+    margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 
+.faq h2{
+  margin: 0 0 40px 0;
+}
+
+.faq-content{
+  margin: 0 0 50px 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
