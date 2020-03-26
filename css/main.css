@@ -140,14 +140,14 @@ p {
   line-height: 1.285;
 }
  
-img {
- 
+img { 
+  width: 100%;
 }
  
 figure {
- 
+        margin: 0;
 }
- 
+
 address {
   font-style: normal;
 }
@@ -204,6 +204,14 @@ header .content-wrapper{
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header nav{
@@ -274,6 +282,8 @@ footer p{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/bridge.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .hero-area h1 {
@@ -295,6 +305,8 @@ aside{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: url('../img/sitting-on-the-ground.jpg') center no-repeat;
+    background-size: cover;
 }
 
 .features h2{
@@ -496,6 +508,10 @@ aside{
       justify-content: space-between;
     }
 
+    header figure{
+      width: 30%;
+    }
+
     header nav{
       width:20%;
     }
@@ -510,6 +526,16 @@ aside{
     }
 
     /**Hero area**/
+
+       .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
     /**Aside**/
 
@@ -532,12 +558,12 @@ aside{
       display: flex;
       justify-content: center;
       align-items:center;
-      flex-flow: row wrap;
-      flex-basis: 175px;
+      flex-flow: column wrap;
+      flex-basis: 50%;
     }
 
     .features .features-item-description {
-      width: 30%
+      width: 60%
     }
 
     /** Reviews **/
