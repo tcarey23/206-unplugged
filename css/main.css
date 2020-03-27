@@ -320,6 +320,11 @@ aside{
     flex-flow: row wrap;
 }
 
+.features i {
+  font-size: 3.75em;
+        margin-bottom: 40px;
+}
+
 .features article{
   width: 63%;
   margin: 30px 0;
