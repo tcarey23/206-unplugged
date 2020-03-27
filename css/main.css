@@ -372,6 +372,22 @@ aside{
   margin: 0;
 }
 
+.map{
+    width: 100%;
+    height: 0; 
+    padding-bottom: 75%; 
+    overflow: hidden;
+    position: relative;
+    }
+ 
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
 /*---FAQ Page Styles---*/
 
 .faq{
@@ -579,42 +595,30 @@ aside{
 
     /** About Page **/
 
-    .mission {
-    background-color: #527158;
+    .mission-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-flow: row wrap;
+    padding-top: 20px;
     }
  
     .mission-content p {
-        margin: 0;
+        margin: 45%;
     }
 
- 
-    .contact-section {
-    background-color: #2a423a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    .contact-section .content-wrapper h2 {
+        width: 80%;
     }
 
-    .map figure {
-    width: 100%;
-    height: 0; 
-    padding-bottom: 80%; 
-    overflow: hidden;
-    position: relative;
-}
- 
-    .map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-}
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+     }
+
+    .contact-content h4 {
+      font-size: 1.5em;
+    } 
 
     /**FAQ Page **/
 
@@ -692,6 +696,10 @@ aside{
  
 
    /*About Page*/
+
+    .map figure{
+      padding-bottom: 37.5%;
+    }
 
     .mission h2,
     .contact-section .content-wrapper h2 {
