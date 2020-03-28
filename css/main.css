@@ -101,19 +101,21 @@ textarea {
 /* General Styles */
  
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
  
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  text-align: left;
+  font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
+  text-align: left;
 }
  
 ul, 
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
  
 a {
@@ -123,16 +125,17 @@ a {
  
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
   font-weight: 500;
+  font-size: 1.875em;
+  margin: 0;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.125em;
-  color: white;
-  margin: 20px 0;
+  margin: 10px 0;
 }
  
 p {
@@ -140,47 +143,21 @@ p {
   line-height: 1.285;
 }
  
-img { 
-  width: 100%;
+img {
+ width: 100%;
 }
  
 figure {
-        margin: 0;
+ margin: 0;
 }
-
+ 
 address {
-  font-style: normal;
+ font-style: normal;
 }
  
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
-}
-
-aside .form {
-  margin-top: 30px;
-}
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 /* ------------ Base header and footer styles -------------*/
@@ -229,12 +206,14 @@ header nav{
     width: 100%;
     margin: 10px 0 20px 0;
     background: #3a3a3a;
+   height: 1px;
 }
 
 header nav ul{
     display: flex;
     justify-content: space-around;
-    width: 100%
+    width: 100%;
+    padding: 0;
 }
 
 header nav ul li{
@@ -278,7 +257,7 @@ footer .content-wrapper{
 }
 
 footer .contact{
-  margin: 0 0 50px 0;
+  margin: 0 0 40px 0;
 }
 
 footer p{
@@ -292,28 +271,61 @@ footer p{
 /*---Homepage styles---*/
 
 
-.hero-area{
+.hero-area {
+  background: url(../img/bridge.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/bridge.jpg') center no-repeat;
-  background-size: cover;
 }
 
-.hero-area h1 {
+.hero-area h2 {
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500; 
-  line-height: 1.2; 
+  line-height: 1.2;
+  margin: 0; 
 }
+
+/*** Aside ***/
 
 aside{
   background-color: #527158;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*** Features ***/
 
 .features{
     display: flex;
@@ -324,6 +336,7 @@ aside{
 }
 
 .features h2{
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
     margin: 0 0 60px 0;
 }
 
@@ -349,6 +362,8 @@ aside{
   text-align: center;
 }
 
+/*** Reviews ***/
+
 .reviews{
     background-color: #2a423a;
     display: flex;
@@ -362,7 +377,7 @@ aside{
 }
 
 .reviews h3{
-  width: 45%;
+  width: 60%;
   margin: 20px 0;
 }
 
@@ -391,10 +406,10 @@ aside{
   margin: 0;
 }
 
-.map{
+.map figure{
     width: 100%;
     height: 0; 
-    padding-bottom: 75%; 
+    padding-bottom: 125%; 
     overflow: hidden;
     position: relative;
     }
@@ -430,7 +445,7 @@ aside{
 }
 
 .faq-content{
-  margin: 0 0 50px 0;
+  margin: 0 0 35px 0;
 }
 
 .faq h4{
@@ -530,11 +545,11 @@ aside{
 
     .content-wrapper{
       max-width: 640px;
-      margin: 100px;
+      margin: 60px;
     }
 
     header{
-      width: 30%;
+      width: 100%;
       justify-content: center;
     }
 
@@ -566,7 +581,7 @@ aside{
     min-height: 600px;
   }
 
-  .hero-area h1 {
+  .hero-area h2 {
     font-size: 3em;
     line-height: 1;
     margin: 0;
@@ -575,7 +590,7 @@ aside{
     /**Aside**/
 
     aside .content-wrapper{
-      margin: 50px 0
+      margin: 50px 0;
       display: flex;
       justify-content: space-between;
       flex-flow: row wrap;
@@ -583,7 +598,7 @@ aside{
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form{
-      width: 100%
+      width: 40%;
       margin:0;
     }
 
@@ -605,11 +620,12 @@ aside{
 
     .reviews article{
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
     }
 
-    .reviews article div{
-      width: 50%;
+    .reviews article div, 
+    .reviews article figure{
+      width: 49%;
     }
 
     /** About Page **/
@@ -622,7 +638,11 @@ aside{
     }
  
     .mission-content p {
-        margin: 45%;
+        width: : 45%;
+    }
+
+    .map figure{
+      padding-bottom: 45%;
     }
 
     .contact-section .content-wrapper h2 {
@@ -662,7 +682,7 @@ aside{
 
     .footer-content{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
     }
 
@@ -722,7 +742,8 @@ aside{
 
     .mission h2,
     .contact-section .content-wrapper h2 {
-        width: 100%;
+        width: 95%;
+        font-size: 3em;
     }
  
     .contact-section .content-wrapper h2 {
